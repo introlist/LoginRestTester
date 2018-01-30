@@ -15,7 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class LoginRestTests {
+public class LoginRestTestCase {
 
     private WebDriver driver;
     private String baseUrl;
