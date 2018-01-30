@@ -9,6 +9,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.text.SimpleDateFormat;
@@ -29,7 +30,7 @@ public class LoginRestTestCase {
         Date testTime = new Date();
         SimpleDateFormat ft =
                 new SimpleDateFormat ("yyMMddHHmm");
-         driver = new FirefoxDriver();
+         driver = new ChromeDriver();
         baseUrl = "http://localhost/PHPLoginRest";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(baseUrl);
@@ -65,7 +66,6 @@ public class LoginRestTestCase {
     @After
     public void tearDown() throws Exception{
         System.out.println("Todos las pruebas terminadas");
-        Thread.sleep(2000);
         driver.quit();
     }
 }
