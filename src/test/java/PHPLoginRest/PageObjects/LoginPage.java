@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
@@ -29,9 +30,10 @@ public class LoginPage {
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+
     }
 
-    public RepositoriesPage login(String username, String password){
+    public RepositoriesPage login(String username, String password) throws Exception{
         clearUsername();
         clearPassword();
         this.username.sendKeys(username);
@@ -60,8 +62,8 @@ public class LoginPage {
         this.loginButton.click();
     }
 
-    public NewAccountPage ClickCreateAccount(){
-        createAccountLink.click();
+    public NewAccountPage ClickCreateAccount() {
+        new WebDriverWait(driver,30).until(ExpectedConditions.elementToBeClickable(createAccountLink)).click();
         return new NewAccountPage(driver);
     }
 

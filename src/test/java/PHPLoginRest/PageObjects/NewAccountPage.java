@@ -32,6 +32,11 @@ public class NewAccountPage {
     public NewAccountPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
+        try{
+            Thread.sleep(2000);
+        }catch (Exception e){
+            System.out.println(e);
+        }
     }
     public LoginPage createAccount(String username, String password){
         clearUsername();
