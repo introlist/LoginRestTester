@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: PHPLoginRest.LoginRestTestCase
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.936 sec - in PHPLoginRest.LoginRestTestCase

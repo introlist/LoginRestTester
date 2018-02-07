@@ -1,0 +1,4 @@
+PHPLoginRest\PageObjects\NewAccountPage.class
+PHPLoginRest\PageObjects\LoginPage.class
+PHPLoginRest\LoginRestTestCase.class
+PHPLoginRest\PageObjects\RepositoriesPage.class

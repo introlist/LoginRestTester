@@ -32,7 +32,7 @@ public class LoginRestTestCase {
         SimpleDateFormat ft =
                 new SimpleDateFormat ("yyMMddHHmm");
          driver = new ChromeDriver();
-        baseUrl = "http://localhost/PHPLoginRest";
+        baseUrl = "http://localhost:8081/PHPLoginRest";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(baseUrl);
         driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
@@ -48,6 +48,7 @@ public class LoginRestTestCase {
             Assert.fail("Excepción no lanzada");
         }catch (Exception e){
             System.out.println(e);
+            System.out.println("-----\nSe esperaba esta excepcion\n-----");
             Assert.assertTrue(!e.toString().equals(""));
         }
     }
