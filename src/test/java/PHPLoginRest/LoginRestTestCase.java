@@ -40,7 +40,7 @@ public class LoginRestTestCase {
         testTimeText = ft.format(testTime);
     }
 
-    @Test
+   @Test
     public void fallarLogin(){
         try{
             repositoriesPage = loginPage.login("NoUser","NoPassword");
@@ -53,7 +53,7 @@ public class LoginRestTestCase {
     }
 
 
-    @Test
+   @Test
     public void repetirUsuarioCreado(){
             newAccountPage = loginPage.ClickCreateAccount();
             loginPage = newAccountPage.createAccount("roberto", "r27101995", "r27101995");
@@ -68,7 +68,7 @@ public class LoginRestTestCase {
         newAccountPage.createAccount(testTimeText,testTimeText);
     }
 
-    @Test
+  @Test
     public void Login() throws Exception{
         repositoriesPage = loginPage.login("admin","admin");
          loginPage =  repositoriesPage.logout();
@@ -91,14 +91,34 @@ public class LoginRestTestCase {
     @Test
     public void buscarUnArea() throws Exception{
         repositoriesPage = loginPage.login("admin","admin");
-        Thread.sleep(2000);
         repositoriesPage.openAreas();
         repositoriesPage.selectArea("INGENIERÍA Y TECNOLOGÍA");
     }
 
+    @Test
+    public void buscarAreaCienciasSociales() throws Exception{
+        repositoriesPage = loginPage.login("admin","admin");
+        repositoriesPage.openAreas();
+        repositoriesPage.selectArea("CIENCIAS SOCIALES");
+    }
+
+    @Test
+    public void FiltradoCompleto() throws Exception{
+        repositoriesPage = loginPage.login("admin","admin");
+        repositoriesPage.openAreas();
+        repositoriesPage.selectArea("CIENCIAS FÍSICO MATEMÁTICAS Y CIENCIAS DE LA TIERRA");
+        repositoriesPage.openCampos();
+        repositoriesPage.selectCampo("CIENCIAS DE LA TIERRA Y DEL ESPACIO");
+        repositoriesPage.openDisciplinas();
+        repositoriesPage.selectDisciplina("OTRAS ESPECIALIDADES DE LA TIERRA, ESPACIO O ENTORNO");
+        repositoriesPage.openSubdisciplinas();
+        repositoriesPage.selectSubdisciplina("OTRAS");
+    }
+
+
     @After
     public void tearDown() throws Exception{
-        System.out.println("Todos las pruebas terminadas");
+        System.out.println("Prueba terminada");
         driver.quit();
     }
 }
