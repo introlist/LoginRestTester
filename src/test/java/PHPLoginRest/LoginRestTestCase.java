@@ -33,7 +33,7 @@ public class LoginRestTestCase {
         chromeOptions.addArguments("test-type");
         chromeOptions.addArguments("no-sandbox");
         driver = new ChromeDriver(chromeOptions);
-        baseUrl = "http://localhost/PHPLoginRest";
+        baseUrl = "http://localhost:8081/PHPLoginRest";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(baseUrl);
         driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
