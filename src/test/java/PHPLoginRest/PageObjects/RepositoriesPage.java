@@ -51,20 +51,28 @@ public class RepositoriesPage {
     }
 
 
-    public void openAreas(){
+    public void openAreas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.areasCombo)) .click();
+        Thread.sleep(1000);
+
     }
 
-    public void openCampos(){
+    public void openCampos() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.camposCombo)) .click();
+        Thread.sleep(1000);
+
     }
 
-    public void openDisciplinas(){
+    public void openDisciplinas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.disciplinasCombo)) .click();
+        Thread.sleep(1000);
+
     }
 
-    public void openSubdisciplinas(){
+    public void openSubdisciplinas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.subdisciplinasCombo)) .click();
+        Thread.sleep(1000);
+
     }
 
     public void selectArea(String item) throws Exception{

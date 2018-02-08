@@ -4,6 +4,7 @@
     <list default="true" id="1d2b116a-076a-4796-afc2-6cda5e7faf64" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PHPLoginRest/LoginRestTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/PHPLoginRest/LoginRestTestCase.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java" afterPath="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="LoginRestTestCase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/PHPLoginRest/LoginRestTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+            <state relative-caret-position="336">
+              <caret line="113" column="30" lean-forward="false" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -60,8 +61,8 @@
       <file leaf-file-name="RepositoriesPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="971">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,10 +87,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/NewAccountPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/PHPLoginRest/LoginRestTestCase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java" />
       </list>
     </option>
   </component>
@@ -341,7 +342,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="LoginRestTestCase.repetirUsuarioCreado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginRestTestCase.fallarLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="PHPLoginRest.*" />
@@ -353,7 +354,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="PHPLoginRest" />
       <option name="MAIN_CLASS_NAME" value="PHPLoginRest.LoginRestTestCase" />
-      <option name="METHOD_NAME" value="repetirUsuarioCreado" />
+      <option name="METHOD_NAME" value="fallarLogin" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -429,17 +430,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltraAutomatizacion" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.repetirUsuarioCreado" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.buscarUnArea" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltradoCompleto" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.buscarUnArea" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltradoCompleto" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.fallarLogin" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltradoCompleto" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.buscarUnArea" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltraAutomatizacion" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.repetirUsuarioCreado" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.fallarLogin" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.buscarUnArea" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.LoginRestTestCase.FiltraAutomatizacion" />
       </list>
     </recent_temporary>
   </component>
@@ -482,16 +483,17 @@
       <option name="project" value="LOCAL" />
       <updated>1518022196744</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixing Jenkins bug.">
+      <created>1518106851741</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518106851741</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginRestTestCase - 2018.01.31 at 11h 34m 04s.xml">
-      <configuration name="LoginRestTestCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LoginRestTestCase - 2018.01.31 at 11h 42m 22s.xml">
-      <configuration name="LoginRestTestCase" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LoginRestTestCase_FiltraAutomatizacion - 2018.01.31 at 11h 23m 15s.xml">
       <configuration name="LoginRestTestCase.FiltraAutomatizacion" configurationId="JUnit" />
     </history-entry>
@@ -504,10 +506,16 @@
     <history-entry file="LoginRestTestCase_FiltradoCompleto - 2018.02.07 at 10h 40m 08s.xml">
       <configuration name="LoginRestTestCase.FiltradoCompleto" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LoginRestTestCase_FiltradoCompleto - 2018.02.08 at 10h 36m 05s.xml">
+      <configuration name="LoginRestTestCase.FiltradoCompleto" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="LoginRestTestCase_buscarUnArea - 2018.02.07 at 10h 23m 51s.xml">
       <configuration name="LoginRestTestCase.buscarUnArea" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LoginRestTestCase_fallarLogin - 2018.01.31 at 11h 25m 41s.xml">
+      <configuration name="LoginRestTestCase.fallarLogin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LoginRestTestCase_fallarLogin - 2018.02.08 at 10h 29m 56s.xml">
       <configuration name="LoginRestTestCase.fallarLogin" configurationId="JUnit" />
     </history-entry>
     <history-entry file="LoginRestTestCase_repetirUsuarioCreado - 2018.01.31 at 11h 26m 06s.xml">
@@ -518,7 +526,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20914000" />
+    <option name="totallyTimeSpent" value="21836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -526,14 +534,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5021482" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295325" sideWeight="0.49785176" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26476908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -559,7 +568,6 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -928,14 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -944,10 +944,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/PHPLoginRest/PageObjects/RepositoriesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="971">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PHPLoginRest/LoginRestTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="34" column="47" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="336">
+          <caret line="113" column="30" lean-forward="false" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
