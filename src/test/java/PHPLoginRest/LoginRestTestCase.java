@@ -10,6 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -28,15 +29,19 @@ public class LoginRestTestCase {
     private String testTimeText;
     @Before
     public void setUp() {
-        Date testTime = new Date();
-        SimpleDateFormat ft =
-                new SimpleDateFormat ("yyMMddHHmm");
-         driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("test-type");
+        chromeOptions.addArguments("no-sandbox");
+        driver = new ChromeDriver(chromeOptions);
         baseUrl = "http://localhost:8081/PHPLoginRest";
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(baseUrl);
         driver.manage().timeouts().pageLoadTimeout(100, TimeUnit.SECONDS);
         loginPage = new LoginPage(driver);
+        Date testTime = new Date();
+        SimpleDateFormat ft =
+                new SimpleDateFormat ("yyMMddHHmm");
+
         testTimeText = ft.format(testTime);
     }
 
