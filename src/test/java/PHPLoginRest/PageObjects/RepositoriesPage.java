@@ -53,25 +53,25 @@ public class RepositoriesPage {
 
     public void openAreas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.areasCombo)) .click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
     }
 
     public void openCampos() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.camposCombo)) .click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
     }
 
     public void openDisciplinas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.disciplinasCombo)) .click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
     }
 
     public void openSubdisciplinas() throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(this.subdisciplinasCombo)) .click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
     }
 
@@ -79,25 +79,25 @@ public class RepositoriesPage {
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"acc\"]//li/span[contains(text(), '"+item+"')]"))).click();
 /*        List<WebElement> elements = driver.findElements(By.xpath("//*[@id=\"acc\"]//li/span"));
         dropdownSelect(elements,item);*/
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
     public void selectCampo(String item) throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"ccc\"]//li/span[contains(text(), '"+item+"')]"))).click();
 /*        List<WebElement> elements = driver.findElements(By.xpath("//*[@id=\"ccc\"]//li/span"));
         dropdownSelect(elements,item);*/
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
     public void selectDisciplina(String item)throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"dcc\"]//li/span[contains(text(), '"+item+"')]"))).click();
 /*        List<WebElement> elements = driver.findElements(By.xpath("//*[@id=\"dcc\"]//li/span"));
         dropdownSelect(elements,item);*/
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
     public void selectSubdisciplina(String item)throws Exception{
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"scc\"]//li/span[contains(text(), '"+item+"')]"))).click();
 /*        List<WebElement> elements = driver.findElements(By.xpath("//*[@id=\"scc\"]//li/span"));
         dropdownSelect(elements,item);*/
-        Thread.sleep(1000);
+        Thread.sleep(2000);
     }
 
 
